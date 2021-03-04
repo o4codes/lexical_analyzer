@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="233.0" prefWidth="461.0" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.o4codes.controllers.SplashScreenController">
+   <children>
+      <VBox alignment="CENTER" layoutX="202.0" layoutY="35.0" prefHeight="233.0" prefWidth="461.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="Lexical Analyzer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="progressBar" prefHeight="3.0" prefWidth="259.0" />
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="splash_pane" />
+      <String fx:value="background_image" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,90 @@
+/* Application wide styles */
+.root{
+    -fx-background-color: #f5f5f5;
+}
+.main_pane{
+    -fx-background-color: #ffffff;
+}
+.window_title_pane{
+    -fx-background-color: #263238;
+    -fx-padding: 0 10 0 10;
+    -fx-alignment: CENTER_LEFT;
+}
+.window_title_label{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+}
+.window_close_btn:hover{
+    -fx-background-color: red;
+}
+.window_minimize_btn:hover {
+    -fx-background-color: #455a64;
+}
+
+.background_image{
+    -fx-background-image: url("../images/background_2.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: none;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-insets: 20;
+}
+
+.jfx-progress-bar > .bar,
+.jfx-progress-bar:indeterminate > .bar{
+    -fx-background-color: #ff9800;
+    -fx-padding: 1.5;
+}
+
+.jfx-text-area{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 10;
+    -fx-text-fill: #424242;
+    -fx-padding: 10;
+    -jfx-color: #ffffff;
+}
+.jfx-text-area:hover, .jfx-text-area:focused{
+    -fx-border-color: #ff9800;
+}
+
+.jfx-text-area > .input-line {
+    -fx-background-color: -jfx-color;
+}
+.jfx-text-area > .input-focused-line {
+    -fx-background-color: -jfx-color;
+}
+
+#parse_btn{
+    -fx-background-color: #455a64;
+    -fx-border-color: #455a64;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+#parse_btn:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: #455a64;
+    -fx-text-fill: #263238;
+}
+
+
+#parse_file_btn{
+    -fx-background-color: transparent;
+    -fx-border-color: #455a64;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #263238;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#parse_file_btn:hover{
+    -fx-background-color: #455a64;
+    -fx-border-color: #455a64;
+    -fx-text-fill: white;
+}
+
