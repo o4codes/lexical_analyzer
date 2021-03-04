@@ -14,11 +14,12 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Download Wix
-        uses: dsaltares/fetch-gh-release-asset@master
+        uses: i3h/download-release-asset@v1
         with:
-          repo: "wixtoolset/wix3"
-          version: "latest"
-          file: "wix311-binaries.zip"
+          owner: wixtoolset
+          repo: wix3
+          tag: wix3112rtm
+          file: wix311-binaries.zip
       - name: Decompress Wix
         uses: DuckSoft/extract-7z-action@v1.0
         with:
@@ -46,12 +47,12 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN}}"
-          automatic_release_tag: "Beta-1.2"
+          automatic_release_tag: "stable_v1.0"
           prerelease: false
-          title: "Windows"
+          title: "stable_v1.0"
           files: |
-            ./target/jfx/native/clipshare-1.0.exe
-            ./target/jfx/native/clipshare-1.0.msi
+            ./target/jfx/native/lexical_analyzer-1.0.exe
+            ./target/jfx/native/lexical_analyzer-1.0.msi
   ubuntu-build:
     runs-on: ubuntu-latest
     steps:
@@ -75,9 +76,9 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN}}"
-          automatic_release_tag: "Beta-1.2"
+          automatic_release_tag: "stable_v1.0"
           prerelease: false
-          title: "Linux"
+          title: "stable_v1.0"
           files: |
-            ./target/jfx/native/clipshare-1.0.deb
-            ./target/jfx/native/clipshare-1.0.rpm
+            ./target/jfx/native/lexical_analyzer-1.0.deb
+            ./target/jfx/native/lexical_analyzer-1.0.rpm
